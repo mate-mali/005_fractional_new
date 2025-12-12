@@ -8,7 +8,6 @@ class Fractional():
         if y == 0:
             raise ValueError("Y value of fractional cannoot be zero!")
         self.y = y
-
     
     def __str__(self):
         return f"{self.x}/{self.y}"
