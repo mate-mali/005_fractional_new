@@ -1,5 +1,8 @@
 from fractional_new.FractionalClass import Fractional
  
+#TODO: cannot currently make tests wotk from pytest running from inside .venv
+
+
 def test_create():
     x1 = Fractional(1, 4)
     x2 = Fractional(2, 3)
@@ -32,40 +35,3 @@ def test_Fractional():
 
 if __name__ == '__main__':
     test_create()
-# x3 = x1 + x2
-# print(x3)
-
-# x1 = 1.23
-# x2 = Fractional(2, 3)
-
-# x3 = x1 + x2
-# print(x3)
-
-# x1 = Fractional(2,7)
-
-# x4 = x1 * x2
-# print(x4)
-# print(x4.to_decimal())
-
-# x5 = x1 - x2
-# print(x5)
-# print(x5.to_decimal())
-
-# x6 = x1 / x2
-# print(x6)
-# print(x6.to_decimal())
-
-# x7 = Fractional(2,8)
-# print(f"{x1 = }")
-# print(f"{x1.to_decimal()}")
-
-# print(f"{x7 = }")
-# print(f"{x7.to_decimal()}")
-
-# print({x7.to_decimal()}, {x1.to_decimal()})
-
-# print(x1 == x7)
-# print(x1 > x2)
-# print(x1 < x2)
-# print(x1 >= x7)
-# print(x1 <= x7) 
