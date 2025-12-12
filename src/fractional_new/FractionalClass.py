@@ -17,6 +17,8 @@ class Fractional():
         return f"Fractional({self.x}, {self.y})"
     
     def __add__(self, fract):
+        if type(fract) == int:
+            fract = Fractional(fract,1)
         x_n = self.x * fract.y + self.y * fract.x
         y_n = self.y * fract.y
         return Fractional(x_n, y_n)
@@ -51,19 +53,24 @@ class Fractional():
         return self.x / self.y
     
     def __lt__(self, fract):
-        return self.to_decimal() < fract.to_decimal()
+        verify = self.to_decimal() < fract.to_decimal()
+        return verify
     
     def __gt__(self, fract):
-        return self.to_decimal() > fract.to_decimal()
+        verify = self.to_decimal() > fract.to_decimal()
+        return verify
     
     def __le__(self, fract):
-        return self.to_decimal() <= fract.to_decimal()
+        verify = self.to_decimal() <= fract.to_decimal()
+        return verify
     
     def __ge__(self, fract):
-        return self.to_decimal() >= fract.to_decimal()
+        verify = self.to_decimal() >= fract.to_decimal()
+        return verify
     
     def __eq__(self, fract):
-        return self.to_decimal() == fract.to_decimal()
+        verify = self.to_decimal() == fract.to_decimal()
+        return verify
 
 if __name__ == '__main__':
     print("Ran. You can use this py file in other projects.")
